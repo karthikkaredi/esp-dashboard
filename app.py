@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # MongoDB connection
-client = MongoClient("mongodb+srv://Edtech:Kinetictile@cluster0.ojv0kad.mongodb.net/?appName=Cluster0")
+client = MongoClient("mongodb+srv://Edutech:Kinetictile@cluster0.ojv0kad.mongodb.net/?appName=Cluster0")
 db = client["esp8266_data"]            # Database name
 collection = db["sensor_readings"]     # Collection name
 
@@ -42,3 +42,4 @@ def all_data():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
