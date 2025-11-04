@@ -19,8 +19,8 @@ header {visibility: hidden !important; height: 0px !important;}
 </style>
 """, unsafe_allow_html=True)
 
-# Flask API URL
-api_url = "https://your-flask-api-url.onrender.com/latest-data"  # Replace with your actual Render/Flask URL
+# Flask API URL (replace with your endpoint)
+api_url = "https://esp-dashboard-wzh3.onrender.com/latest"  # Use your public Flask API
 
 # Default values
 steps, energy, power, status = 0, 0, 0, "Inactive"
