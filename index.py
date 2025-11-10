@@ -48,4 +48,5 @@ def handler(request, context=None):
     return app(request, context)
 
 if __name__ == "__main__":
-    app.run()
+    index.run()
+
