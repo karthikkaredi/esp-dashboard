@@ -19,15 +19,15 @@ header {visibility: hidden !important; height: 0px !important;}
 </style>
 """, unsafe_allow_html=True)
 
-# Flask API URL (replace with your endpoint)
-api_url = "https://esp-dashboard-wzh3.onrender.com/latest"  # Use your public Flask API
+# Flask API URL
+api_url = "http://10.225.195.1:5000/latest"  # Update this IP based on where Flask is running
 
 # Default values
 steps, energy, power, status = 0, 0, 0, "Inactive"
 
 # Fetch the latest data from API
 try:
-    response = requests.get(api_url)
+    response = requests.get(api_url, timeout=2)
     if response.status_code == 200:
         data = response.json()
         steps = data.get("steps", 0)
