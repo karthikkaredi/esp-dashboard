@@ -41,5 +41,6 @@ def latest_data():
     else:
         return jsonify({"message": "No data found"}), 404
 
+# ✅ Important for Fly.io / Render: use 0.0.0.0 and port 8080
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=8080)
