@@ -20,7 +20,7 @@ header {visibility: hidden !important; height: 0px !important;}
 """, unsafe_allow_html=True)
 
 # Flask API URL
-api_url = "http://10.225.195.1:5000/latest"  # Update this IP based on where Flask is running
+api_url = "https://esp-dashboard-m5jz.onrender.com"  # Update this IP based on where Flask is running
 
 # Default values
 steps, energy, power, status = 0, 0, 0, "Inactive"
@@ -97,3 +97,4 @@ with bottom2:
     </div>
     </div>
     """, unsafe_allow_html=True)
+
